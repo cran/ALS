@@ -11,7 +11,7 @@
 \title{Data inspired by GC mass spectrometry experiments}
 \description{Data inspired by GC mass spectrometry experiments.}
 \usage{
-data("multiex")
+data("multiex1")
 }
 \format{
   \code{PsiList} is a list of 15 matrices of dimension 81 by 165, each

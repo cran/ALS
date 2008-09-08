@@ -1,0 +1,2 @@
+export(als,barplot3,getCList, getC, getS, getWSListAllTimes, getWSList,
+       matchFactor, normdat, plotS)

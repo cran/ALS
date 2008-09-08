@@ -1,7 +1,7 @@
  \name{als}
 \alias{als}
 \title{alternating least squares multivariate curve resolution (MCR-ALS)}
-\description{This is an algorithm for alternating least squares
+\description{This is an implementation of alternating least squares
   multivariate curve resolution (MCR-ALS).  Given a dataset in matrix
   form \code{d1}, the dataset is decomposed as \code{d1=C \%*\% t(S)}
   where the columns of \code{C} and \code{S} represent components
@@ -134,10 +134,6 @@ Jonsson P, Johansson A, Gullberg J, Trygg J, A J, Grung B, Marklund S,
 Sjostrom M, Antti H, Moritz T. High-throughput data analysis for
 detecting and identifying differences between samples in GC/MS-based
 metabolomic analyses. Analytical Chemistry 2005; 77:5635-5642.
-
-Mullen KM, van Stokkum IHM.  Resolution of co-eluting components in mass
-spectrometry data via multivariate curve resolution alternating least
-squares and global analysis.  Submitted 2008.
 
 Tauler R. Multivariate curve resolution applied to second order data.
 Chemometrics and Intelligent Laboratory Systems 1995; 30:133-146.
