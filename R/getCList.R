@@ -8,11 +8,11 @@
       if(nonnegC)
         cc <- try(nnls(A = S * WList[[j]][i,], b = PsiList[[j]][i,]))
       else
-        cc <- try(qr(S * WList[[j]][i,]), PsiList[[j]][i,])
+        cc <- try(qr.coef(qr(S * WList[[j]][i,]), PsiList[[j]][i,]))
       if(class(cc) == "try-error")
         sol <- rep(1, ncol(S))
       else
-        sol <- if(nonnegC) coef(cc) else qr.coef(cc) 
+        sol <- if(nonnegC) coef(cc) else cc 
       cc1 <- rep(NA, ncol(CList[[j]]))  
       if(length(fixed[[j]])>0) 
         cc1[fixed[[j]]] <- 0

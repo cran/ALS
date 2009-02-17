@@ -3,12 +3,12 @@
   C[which(is.nan(C))] <- 1
   for(i in 1:ncol(PsiAll)) {
     if(nonnegS)
-       s <- try(nnls(A = C * W[,i], b = PsiAll[,i]))
+      s <- try(nnls(A = C * W[,i], b = PsiAll[,i]))
     else
-      s <- try(qr.coef(qr(C * W[,i]), PsiAll[,i]))
+      s <- try(qr.coef( qr(C * W[,i]), PsiAll[,i]))
     if(class(s) == "try-error")
       S[i,] <- rep(1, ncol(C))
-    else S[i,] <- if(nonnegS) coef(s) else qr.coef(s)
+    else S[i,] <- if(nonnegS) coef(s) else s
   }
   if(uni) {
     ncolel <- ncol(C)
