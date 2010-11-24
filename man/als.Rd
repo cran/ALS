@@ -144,9 +144,10 @@ Chemometrics 1995; 9:31-58.
 }
 \note{This function was used to solve problems described in
 
-van Stokkum IHM, Mullen KM, Mihaleva VV. Global analysis of
-multiple gas chromatography-mass spectrometry (GC/MS) data sets: a
-method for resolution of co-eluting components, submitted 2008.
+  van Stokkum IHM, Mullen KM, Mihaleva VV.  Global analysis of multiple
+  gas chromatography-mass spectrometry (GS/MS) data sets: A method for
+  resolution of co-eluting components with comparison to MCR-ALS.
+  Chemometrics and Intelligent Laboratory Systems 2009; 95(2): 150-163.
 
 in conjunction with the package TIMP.  For the code to reproduce
 the examples in this paper, see

@@ -1,0 +1,4 @@
+Changes in version 0.0.4
+
+  o Thanks to Jan Gerretzen, a bug that appears when 
+  (normS > 0 && normS != 1) is removed.  

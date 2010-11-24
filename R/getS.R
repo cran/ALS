@@ -23,7 +23,7 @@
     else {
       for(i in 1:ncol(S)) {
         nm <- sqrt(sum((S[,i])^2))
-        S[,i] <- sqrt(sum((S[,i]/nm)^2))
+        S[,i] <- S[,i]/nm
       }
     }         
   }
