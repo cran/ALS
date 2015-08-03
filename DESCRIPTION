@@ -1,8 +1,8 @@
 Package: ALS
 Type: Package
-Title: multivariate curve resolution alternating least squares
+Title: Multivariate Curve Resolution Alternating Least Squares
         (MCR-ALS)
-Version: 0.0.5
+Version: 0.0.6
 Author: Katharine M. Mullen
 Maintainer: Katharine Mullen <mullenkate@gmail.com>
 Depends: nnls (>= 1.1), Iso, R (>= 2.10)
@@ -15,6 +15,7 @@ Description: Alternating least squares is often used to resolve
         assuming that one of the two matrices in the bilinear
         decomposition is shared between datasets.
 License: GPL (>= 2)
-Packaged: 2012-03-19 15:54:26 UTC; kmullen
+Packaged: 2015-08-03 07:12:50 UTC; kmm
 Repository: CRAN
-Date/Publication: 2012-03-19 16:28:55
+Date/Publication: 2015-08-03 11:44:35
+NeedsCompilation: no

@@ -6,7 +6,7 @@
       S <- S[, -fixed[[j]]]
     for(i in 1:nrow(PsiList[[j]])) {
       if(nonnegC)
-        cc <- try(nnls(A = S * WList[[j]][i,], b = PsiList[[j]][i,]))
+        cc <- try(nnls::nnls(A = S * WList[[j]][i,], b = PsiList[[j]][i,]))
       else
         cc <- try(qr.coef(qr(S * WList[[j]][i,]), PsiList[[j]][i,]))
       if(class(cc) == "try-error")
@@ -26,7 +26,7 @@
       if(baseline)
         ncolel <- ncolel - 1 
       for(i in 1:ncolel) {
-        CList[[j]][,i] <- ufit(y=CList[[j]][,i],x=x)$y
+        CList[[j]][,i] <- Iso::ufit(y=CList[[j]][,i],x=x)$y
       }
     }
   }

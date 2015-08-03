@@ -1,3 +1,7 @@
+Changes in version 0.0.6
+o   Moved examples_chemo.zip within package
+o   Changed function calls to nnls to nnls::nnls() 
+
 Changes in version 0.0.5
  o  Better compression obtained by using R CMD build --resave-data
  o  Added dependence on R 2.10 

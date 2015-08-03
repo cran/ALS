@@ -1,2 +1,10 @@
 export(als,barplot3,getCList, getC, getS, getWSListAllTimes, getWSList,
        matchFactor, normdat, plotS)
+importFrom(Iso, ufit)
+importFrom(nnls, nnls)
+importFrom("grDevices", "dev.off", "heat.colors", "pdf", "postscript")
+importFrom("graphics", "abline", "axTicks", "axis", "legend", "mtext",
+             "par", "plot.new", "plot.window", "rect", "segments",
+             "title", "xinch", "yinch")
+ importFrom("stats", "coef")
+

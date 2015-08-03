@@ -3,7 +3,7 @@
   C[which(is.nan(C))] <- 1
   for(i in 1:ncol(PsiAll)) {
     if(nonnegS)
-      s <- try(nnls(A = C * W[,i], b = PsiAll[,i]))
+      s <- try(nnls::nnls(A = C * W[,i], b = PsiAll[,i]))
     else
       s <- try(qr.coef( qr(C * W[,i]), PsiAll[,i]))
     if(class(s) == "try-error")
@@ -15,7 +15,7 @@
     if(baseline)
       ncolel <- ncolel - 1 
     for(i in 1:ncolel) 
-      S[i,] <- ufit(y=S[i,],x=x2)$y
+      S[i,] <- Iso::ufit(y=S[i,],x=x2)$y
   }
   if(normS>0) {
     if(normS==1) 

@@ -150,8 +150,8 @@ Chemometrics 1995; 9:31-58.
   Chemometrics and Intelligent Laboratory Systems 2009; 95(2): 150-163.
 
 in conjunction with the package TIMP.  For the code to reproduce
-the examples in this paper, see
-\url{http://www.nat.vu.nl/~kate/examples_chemo.zip}.
+the examples in this paper, see examples_chemo.zip included in the
+\code{inst} directory of the package source code. .
 }
 \seealso{\code{\link{matchFactor}},\code{\link{multiex}},\code{\link{multiex1}},
   \code{\link{plotS}}}
