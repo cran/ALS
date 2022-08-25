@@ -9,7 +9,7 @@
         cc <- try(nnls::nnls(A = S * WList[[j]][i,], b = PsiList[[j]][i,]))
       else
         cc <- try(qr.coef(qr(S * WList[[j]][i,]), PsiList[[j]][i,]))
-      if(class(cc) == "try-error")
+      if(inherits(cc, "try-error"))
         sol <- rep(1, ncol(S))
       else
         sol <- if(nonnegC) coef(cc) else cc 

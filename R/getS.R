@@ -6,7 +6,7 @@
       s <- try(nnls::nnls(A = C * W[,i], b = PsiAll[,i]))
     else
       s <- try(qr.coef( qr(C * W[,i]), PsiAll[,i]))
-    if(class(s) == "try-error")
+    if(inherits(s, "try-error"))
       S[i,] <- rep(1, ncol(C))
     else S[i,] <- if(nonnegS) coef(s) else s
   }

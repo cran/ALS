@@ -1,4 +1,4 @@
- \name{als}
+\name{als}
 \alias{als}
 \title{alternating least squares multivariate curve resolution (MCR-ALS)}
 \description{This is an implementation of alternating least squares

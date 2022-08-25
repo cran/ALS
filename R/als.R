@@ -32,27 +32,27 @@
   oneMore <- FALSE
   
   while( ((RD > thresh || forcemaxiter ) && maxiter >= iter) || oneMore) {
-    if(iter %% 2 == b)   ## solve for S, get RSS 
-      S <- getS(CList, PsiAll, S, W, baseline, uniS, nonnegS, normS, x2)
-    else   ## solve for CList, get resid matrices in this step only 
-      CList <- getCList(S, PsiList, CList, WList, resid, x, baseline,
-                         fixed, uniC, nonnegC, closureC)
-    # determine the residuals 
-    for(j in 1:length(PsiList)) {
-      for(i in 1:nrow(PsiList[[j]])) {
-        resid[[j]][i,] <- PsiList[[j]][i,] - CList[[j]][i,] %*% t(S * WList[[j]][i,])
+      if(iter %% 2 == b)   ## solve for S, get RSS 
+          S <- getS(CList, PsiAll, S, W, baseline, uniS, nonnegS, normS, x2)
+      else   ## solve for CList, get resid matrices in this step only 
+          CList <- getCList(S, PsiList, CList, WList, resid, x, baseline,
+                            fixed, uniC, nonnegC, closureC)
+                                        # determine the residuals 
+      for(j in 1:length(PsiList)) {
+          for(i in 1:nrow(PsiList[[j]])) {
+              resid[[j]][i,] <- PsiList[[j]][i,] - CList[[j]][i,] %*% t(S * WList[[j]][i,])
+          }
       }
-    }
-    rss <- sum(unlist(resid)^2)
-    RD <- ((oldrss - rss) / oldrss)
-    oldrss <- rss
-    typ <- if(iter %% 2 == b) "S" else "C"
-    cat("Iteration (opt. ", typ, "): ", iter, ", RSS: ", rss, ", RD: ", RD,
-        "\n", sep = "")
-    iter <- iter + 1
-    ## make sure the last iteration enforces any normalization/closure
-    oneMore <- (normS > S && (iter %% 2 != b) && maxiter != 1) ||
-    (length(closureC) > 0 && (iter %% 2 == b) ) 
+      rss <- sum(unlist(resid)^2)
+      RD <- ((oldrss - rss) / oldrss)
+      oldrss <- rss
+      typ <- if(iter %% 2 == b) "S" else "C"
+      cat("Iteration (opt. ", typ, "): ", iter, ", RSS: ", rss, ", RD: ", RD,
+          "\n", sep = "")
+      iter <- iter + 1
+      ## make sure the last iteration enforces any normalization/closure
+      oneMore <- (normS > 0 && (iter %% 2 != b) && maxiter != 1) ||
+          (length(closureC) > 0 && (iter %% 2 == b) ) 
   }
   cat("Initial RSS / Final RSS =", initialrss, "/", rss, "=",
       initialrss/rss,"\n")

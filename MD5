@@ -1,11 +1,11 @@
-47576c1f670df3e3f401d0c5ec8deab2 *DESCRIPTION
+5215e99312ab66837bbe05a5497fe177 *DESCRIPTION
 5be1608d3f990c1a150e9d35feecbafb *NAMESPACE
-5efc6a8efbcb4f0b65f4ade1a5845d2f *NEWS
-40b678a96eaf0bdb0b179bf64815a121 *R/als.R
+d532cc51b0b275c9c17a0f540e499d42 *NEWS
+1b658464529eec95c12c521f1ba48301 *R/als.R
 8daf2d96fd499c17cfe74e351442d9b2 *R/barplot3.R
 59d7e64e0814138a7f623dbadc8c5db7 *R/getC.R
-c9d058d74dbd42a4b3e1195d36c13d6d *R/getCList.R
-162f5e749b8fd6e42891ddf03bcc0de4 *R/getS.R
+ac818aea038cab3fdaea7d0c3ce01d0b *R/getCList.R
+cb80bc21590515cf1ea8cb97bac947db *R/getS.R
 feb3343496855d0419bd96c21208ee2b *R/getWSList.R
 715aae56e4f3c5a358e081704de30c0e *R/getWSListAllTimes.R
 d744ab21181a26b58c7553ea4c061d8f *R/matchFactor.R
@@ -14,7 +14,7 @@ ff63a33b9b94acb219c9894062a5ac7d *R/plotSp.R
 dd935ef7a57462ced987197a5718ca75 *data/multiex.rda
 da38cf138f1266c6b70f58458a5b415b *data/multiex1.rda
 54910c8c706f253e5d580fb79c0d9205 *inst/doc/examples_chemo.zip
-ea8441b1682ece4cb8055fbe01643ec9 *man/als.Rd
+d0536b3205719773cee4c5a96ce73c8f *man/als.Rd
 6e40edad22d004b925065ed548163b52 *man/internals.Rd
 78a0002badafbc26d0a3b8686e07a1a8 *man/matchFactor.Rd
 75ca7837ae247247d43fcd2550c0bb2e *man/multiex.Rd

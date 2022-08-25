@@ -1,12 +1,13 @@
+Changes in version 0.0.7
+o   Tests for "try-error" improved
+o   Test to make sure the last iteration enforces any normalization/closure
+    modified
 Changes in version 0.0.6
 o   Moved examples_chemo.zip within package
 o   Changed function calls to nnls to nnls::nnls() 
-
 Changes in version 0.0.5
- o  Better compression obtained by using R CMD build --resave-data
- o  Added dependence on R 2.10 
-
+o   Better compression obtained by using R CMD build --resave-data
+o   Added dependence on R 2.10 
 Changes in version 0.0.4
-
-  o Thanks to Jan Gerretzen, a bug that appears when 
-  (normS > 0 && normS != 1) is removed.  
+o   Thanks to Jan Gerretzen, a bug that appears when 
+    (normS > 0 && normS != 1) is removed.  
